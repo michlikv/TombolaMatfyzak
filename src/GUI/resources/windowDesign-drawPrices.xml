@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frame id="VDDrawPricesframe" size="400,300"  MinimumSize="400,300" resizable="true" title="Tombola - losování výher" 
+        defaultCloseOperation="JFrame.DISPOSE_ON_CLOSE">       
+        
+	<panel id="VDintro" layout="GridLayout(1,1)" border="EmptyBorder(10,10,10,10)" constraints="BorderLayout.CENTER" >
+	   <panel layout="GridBagLayout" background="WHITE" border="EmptyBorder(10,10,10,10)">
+			<textarea editable="false" WrapStyleWord="true" font="ARIAL-BOLD-16"  
+	            text="Losování výher" HorizontalAlignment="SwingConstants.CENTER"  opaque="false">
+	            <gridbagconstraints anchor="GridBagConstraints.CENTER" insets="(5,5,5,5)" 
+	                gridx="0" gridy="0" gridwidth="3" gridheight="1"  fill="GridBagConstraints.HORIZONTAL" />        
+	        </textarea>
+	        <textarea editable="false" WrapStyleWord="true" font="ARIAL-BOLD-16" id="NumberLabel"
+	            text="" HorizontalAlignment="SwingConstants.CENTER"  opaque="false">
+	            <gridbagconstraints anchor="GridBagConstraints.CENTER" insets="(5,5,5,5)" 
+	                gridx="0" gridy="1" gridwidth="1" gridheight="1"  fill="GridBagConstraints.HORIZONTAL" />        
+	        </textarea>
+	        <textfield text="" id="TicketNumber" toolTipText="celé číslo" >
+				<gridbagconstraints insets="(5,5,5,5)"
+            		gridx="1" gridy="1" gridwidth="2" gridheight="1" fill="GridBagConstraints.HORIZONTAL"/>                      
+   			</textfield>
+			<button text="OK" id="ConfirmButton" action="Confirm">
+	            <gridbagconstraints insets="(5,5,5,5)" fill="GridBagConstraints.HORIZONTAL" anchor="GridBagConstraints.CENTER"
+	                gridx="3" gridy="1" gridwidth="1" gridheight="1"/>               
+	        </button> 
+
+			<scrollpane constraints="BorderLayout.CENTER" border="EmptyBorder(0,0,0,0)">
+				<gridbagconstraints anchor="GridBagConstraints.CENTER" insets="(5,5,5,5)" 
+	    	        gridx="0" gridy="2" gridwidth="4" gridheight="1"  fill="GridBagConstraints.HORIZONTAL" />
+	    	    <textarea id="ReadCodes" editable="false" WrapStyleWord="true" 
+	    	    	HorizontalAlignment="SwingConstants.CENTER"  opaque="false">
+					<gridbagconstraints insets="(5,5,5,5)"
+	            		gridx="0" gridy="1" gridwidth="3" gridheight="1" fill="GridBagConstraints.HORIZONTAL"/>                      
+	   			</textarea>
+			</scrollpane>
+		</panel> 
+	</panel>          
+
+</frame>    

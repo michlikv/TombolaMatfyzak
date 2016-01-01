@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frame id="VDframe" size="400,550"  MinimumSize="400,550" resizable="true" title="Tombola" 
+        defaultCloseOperation="JFrame.EXIT_ON_CLOSE">       
+ <panel id="VDincludeHere" layout="GridLayout(1,1)" constraints="BorderLayout.CENTER">        
+    </panel>
+</frame>    

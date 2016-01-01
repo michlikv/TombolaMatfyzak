@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>           
+	<panel id="VDintro" layout="GridLayout(1,1)" border="EmptyBorder(10,10,10,10)" constraints="BorderLayout.CENTER" >
+		<scrollpane constraints="BorderLayout.CENTER" border="EmptyBorder(0,0,0,0)">
+	        <panel layout="GridBagLayout" background="WHITE" border="EmptyBorder(10,10,10,10)">
+		        
+		        <label text="Načtené zdroje">
+					<gridbagconstraints  insets="(5,5,5,5)" 
+						gridx="0" gridy="0" gridwidth="2" gridheight="1" fill="GridBagConstraints.HORIZONTAL"/>                           
+				</label>
+		        
+		        <panel layout="GridBagLayout" background="pink" border="EmptyBorder(10,10,10,10)">
+		        	<gridbagconstraints  insets="(5,5,5,5)" 
+						gridx="0" gridy="1" gridwidth="4" gridheight="1" fill="GridBagConstraints.HORIZONTAL"/> 
+					
+					<label text="valid_tickets.txt">
+					<gridbagconstraints  insets="(5,5,5,5)" 
+						gridx="0" gridy="0" gridwidth="1" gridheight="1" fill="GridBagConstraints.HORIZONTAL"/>                           
+					</label>
+					<textarea id="ValidTicketsFileStats" editable="false" WrapStyleWord="true" LineWrap="true" font="ARIAL-BOLD-12"  
+		            	text="" HorizontalAlignment="SwingConstants.CENTER"  opaque="false">
+		            	<gridbagconstraints anchor="GridBagConstraints.CENTER" insets="(5,5,5,5)" 
+		                	gridx="1" gridy="0" gridwidth="1" gridheight="1"  fill="GridBagConstraints.HORIZONTAL" />        
+		        	</textarea>
+		        	
+		        	<label text="prices.tsv">
+					<gridbagconstraints  insets="(5,5,5,5)" 
+						gridx="0" gridy="1" gridwidth="1" gridheight="1" fill="GridBagConstraints.HORIZONTAL"/>                           
+					</label>
+					<textarea id="PricesFileStats" editable="false" WrapStyleWord="true" LineWrap="true" font="ARIAL-BOLD-12"  
+		            	text="" HorizontalAlignment="SwingConstants.CENTER"  opaque="false">
+		            	<gridbagconstraints anchor="GridBagConstraints.CENTER" insets="(5,5,5,5)" 
+		                	gridx="1" gridy="1" gridwidth="1" gridheight="1"  fill="GridBagConstraints.HORIZONTAL" />        
+		        	</textarea>
+		        	
+		        	<label text="drawn_prices.tsv">
+					<gridbagconstraints  insets="(5,5,5,5)" 
+						gridx="0" gridy="2" gridwidth="1" gridheight="1" fill="GridBagConstraints.HORIZONTAL"/>                           
+					</label>
+		        	<textarea id="DrawnPricesFileStats" editable="false" WrapStyleWord="true" LineWrap="true" font="ARIAL-BOLD-12"  
+		            	text="" HorizontalAlignment="SwingConstants.CENTER"  opaque="false">
+		            	<gridbagconstraints anchor="GridBagConstraints.CENTER" insets="(5,5,5,5)" 
+		                	gridx="1" gridy="2" gridwidth="1" gridheight="1"  fill="GridBagConstraints.HORIZONTAL" />        
+		        	</textarea>				
+		        			
+		        </panel>
+		        
+		        <separator>
+					<gridbagconstraints insets="(0,0,0,0)" fill="GridBagConstraints.BOTH" 
+						gridx="0" gridy="2" gridwidth="2" gridheight="1" />                      
+				</separator>
+		        
+				<textarea editable="false" WrapStyleWord="true" LineWrap="true" font="ARIAL-BOLD-16"  
+		            text="Příprava kódů" HorizontalAlignment="SwingConstants.CENTER"  opaque="false">
+		            <gridbagconstraints anchor="GridBagConstraints.CENTER" insets="(5,5,5,5)" 
+		                gridx="0" gridy="3" gridwidth="2" gridheight="1"  fill="GridBagConstraints.HORIZONTAL" />        
+		        </textarea>
+		        <button text="Načíst čtečkou" id="loadWithReaderButton" action="loadWithReader">
+		            <gridbagconstraints insets="(5,5,5,5)" fill="GridBagConstraints.HORIZONTAL" anchor="GridBagConstraints.CENTER"
+		                gridx="1" gridy="4" gridwidth="1" gridheight="1"/>              
+		        </button>                                                      
+	        
+	        	<separator>
+					<gridbagconstraints insets="(0,0,0,0)" fill="GridBagConstraints.BOTH" 
+						gridx="0" gridy="5" gridwidth="2" gridheight="1" />                      
+				</separator>
+	
+				<textarea editable="false" WrapStyleWord="true" font="ARIAL-BOLD-16"  
+		            text="Losování výher" HorizontalAlignment="SwingConstants.CENTER"  opaque="false">
+		            <gridbagconstraints anchor="GridBagConstraints.CENTER" insets="(5,5,5,5)" 
+		                gridx="0" gridy="6" gridwidth="1" gridheight="1"  fill="GridBagConstraints.HORIZONTAL" />        
+		        </textarea>
+				
+				<button text="Start" id="DrawPricesButton" action="drawPrices">
+					<gridbagconstraints insets="(5,5,5,5)" fill="GridBagConstraints.HORIZONTAL"
+						gridx="1" gridy="7" gridwidth="1" gridheight="1" />                      
+				</button>
+	
+				<separator>
+					<gridbagconstraints insets="(0,0,0,0)" fill="GridBagConstraints.BOTH" 
+						gridx="0" gridy="8" gridwidth="2" gridheight="1" />                      
+				</separator>
+	
+				<textarea editable="false" WrapStyleWord="true" font="ARIAL-BOLD-16"  
+		            text="Vydávání výher" HorizontalAlignment="SwingConstants.CENTER"  opaque="false">
+		            <gridbagconstraints anchor="GridBagConstraints.CENTER" insets="(5,5,5,5)" 
+		                gridx="0" gridy="9" gridwidth="1" gridheight="1"  fill="GridBagConstraints.HORIZONTAL" />        
+		        </textarea>
+				
+				<button text="Start" id="GiveAwayPricesButton" action="giveAwayPrices">
+					<gridbagconstraints insets="(5,5,5,5)" fill="GridBagConstraints.HORIZONTAL"
+						gridx="1" gridy="10" gridwidth="1" gridheight="1" />                      
+				</button>
+	                        
+			</panel>    
+		</scrollpane>
+	</panel>          
