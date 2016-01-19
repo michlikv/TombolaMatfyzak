@@ -21,7 +21,7 @@ public class TicketTools {
 	public static String PATH;
 	
 	static {
-		File f = new File(WindowManager.class.getProtectionDomain().getCodeSource().getLocation().getPath());
+		File f = new File(TicketTools.class.getProtectionDomain().getCodeSource().getLocation().getPath());
 		PATH = f.getParent();
 	}
 	
