@@ -22,7 +22,7 @@
 		                	gridx="1" gridy="0" gridwidth="1" gridheight="1"  fill="GridBagConstraints.HORIZONTAL" />        
 		        	</textarea>
 		        	
-		        	<label text="prices.tsv">
+		        	<label text="prices.csv">
 					<gridbagconstraints  insets="(5,5,5,5)" 
 						gridx="0" gridy="1" gridwidth="1" gridheight="1" fill="GridBagConstraints.HORIZONTAL"/>                           
 					</label>
@@ -32,7 +32,7 @@
 		                	gridx="1" gridy="1" gridwidth="1" gridheight="1"  fill="GridBagConstraints.HORIZONTAL" />        
 		        	</textarea>
 		        	
-		        	<label text="drawn_prices.tsv">
+		        	<label text="drawn_prices.csv">
 					<gridbagconstraints  insets="(5,5,5,5)" 
 						gridx="0" gridy="2" gridwidth="1" gridheight="1" fill="GridBagConstraints.HORIZONTAL"/>                           
 					</label>
