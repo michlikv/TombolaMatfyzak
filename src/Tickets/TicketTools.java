@@ -23,6 +23,7 @@ public class TicketTools {
 	static {
     String path = TicketTools.class.getProtectionDomain().getCodeSource().getLocation().getPath();
 		File f = new File(URLDecoder.decode(path, "UTF-8"));
+    // url decoder je pry blby, misto toho Paths.get(url.toURI()).toFile() (a javu 7)
 		PATH = f.getParent();
 	}
 	
