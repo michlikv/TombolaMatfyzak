@@ -3,9 +3,9 @@ package Tickets;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
+import java.nio.file.Paths;
 
 import org.apache.commons.io.FileUtils;
-
 import GUI.WindowManager;
 
 
@@ -21,10 +21,11 @@ public class TicketTools {
 	public static String PATH;
 	
 	static {
-    String path = TicketTools.class.getProtectionDomain().getCodeSource().getLocation().getPath();
-		File f = new File(URLDecoder.decode(path, "UTF-8"));
-    // url decoder je pry blby, misto toho Paths.get(url.toURI()).toFile() (a javu 7)
-		PATH = f.getParent();
+    try {
+		  File f = Paths.get(TicketTools.class.getProtectionDomain().getCodeSource().getLocation().toURI()).toFile();
+		  PATH = f.getParent();
+    }
+    catch (Exception e) {}
 	}
 	
 	public static void readValidCodes() {
