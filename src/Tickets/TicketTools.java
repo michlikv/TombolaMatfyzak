@@ -21,7 +21,7 @@ public class TicketTools {
 	public static String PATH;
 	
 	static {
-    String path = Test.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+    String path = TicketTools.class.getProtectionDomain().getCodeSource().getLocation().getPath();
 		File f = new File(URLDecoder.decode(path, "UTF-8"));
 		PATH = f.getParent();
 	}
